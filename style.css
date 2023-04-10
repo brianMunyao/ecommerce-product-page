@@ -42,5 +42,130 @@ nav {
 }
 
 main {
-	padding: 50px 0;
+	padding: 50px;
+	display: flex;
+}
+
+.product-left,
+.product-right {
+	width: 50%;
+	padding: 0 6%;
+}
+
+.product-left > img {
+	width: 100%;
+	border-radius: 10px;
+}
+
+.product-left div {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+.product-left div img {
+	position: relative;
+	width: 70px;
+	border-radius: 10px;
+}
+
+.product-left div img:first-child {
+	border: 2px solid hsl(26, 100%, 55%);
+	opacity: 0.3;
+}
+
+.product-right {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.product-right .company {
+	color: hsl(26, 100%, 55%);
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-bottom: 12px;
+}
+
+h1 {
+	font-size: 38px;
+}
+
+.description {
+	color: hsl(219, 9%, 45%);
+	font-size: 14px;
+	line-height: 21px;
+	margin: 20px 0 15px;
+}
+
+.price-now {
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.percent-off {
+	background: hsl(25, 100%, 94%);
+	color: hsl(26, 100%, 55%);
+	font-weight: 600;
+	padding: 2px 5px;
+	border-radius: 5px;
+	margin-left: 10px;
+}
+
+.initial-price {
+	margin-top: 8px;
+	text-decoration: line-through;
+	color: hsl(220, 14%, 75%);
+	font-weight: 600;
+	font-size: 15px;
+}
+
+.cart-details {
+	display: flex;
+	margin-top: 25px;
+	display: flex;
+	gap: 15px;
+	align-items: center;
+	justify-content: space-between;
+}
+.add-minus {
+	background: hsl(223, 64%, 98%);
+	height: 100%;
+	display: flex;
+	align-items: center;
+	padding: 0 20px;
+	border-radius: 10px;
+}
+.add-minus span {
+	margin: 0 25px;
+	font-weight: 700;
+	font-size: 14px;
+}
+.add-minus img {
+	cursor: pointer;
+	width: 12px;
+}
+.add-to-cart {
+	cursor: pointer;
+	background: hsl(26, 100%, 55%);
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+	padding: 10px;
+	border-radius: 10px;
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: 0.2px;
+	box-shadow: hsla(26, 100%, 55%, 0.61) 0px 12px 15px -10px;
+}
+.add-to-cart svg {
+	margin-right: 10px;
+	transform: scale(0.7);
+}
+
+.add-to-cart svg path {
+	fill: white;
 }
